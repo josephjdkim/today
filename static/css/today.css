@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#today-box {
+  display: flex;
+  margin: 0px auto;
+  width: 80vw;
+  max-width: 80vh;
+  height: 80vh;
+  align-items: flex-end;
+}
+
+.color-box {
+  display: flex;
+  margin: 0px auto;
+  width: 5vw;
+  max-width: 5vh;
+  height: 60vh;
+}
+
+#good-color {
+  background-color: #ffe2ef;
+}
+
+#bad-color {
+  background-color: #5b507f;
+}
+
+#stats {
+  margin: 50px;
+}
+
+#stats p {
+  margin: auto auto 0;
+}

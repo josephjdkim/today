@@ -1,0 +1,15 @@
+h1 {
+  font-family: serif;
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 100px;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  background-color: #FAFAFA;
+  margin: 0;
+}

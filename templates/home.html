@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Today:</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+
+<body>
+
+  <div id="yourday">
+
+      <h1>Today was a<br>
+
+      <form action="/submit" method="POST">
+        <input type="text" name="input" placeholder="good/bad" maxlength="4" autofocus="" id="userinp">
+      </form>
+
+      day.</h1>
+
+  </div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='home.js') }}"></script>
+
+</body>
+</html>

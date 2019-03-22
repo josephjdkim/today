@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Today: {{ color }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/today.css') }}">
+  <style>
+    #today-box {
+      background-color: {{ color }}
+    }
+  </style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="color-box" id="good-color"></div>
+
+  <div id="today-box">
+    <div id="stats">
+      <p>Good: {{ good }}%</p>
+      <p>Bad: {{ bad }}%</p>
+    </div>
+  </div>
+
+  <div class="color-box" id="bad-color"></div>
+</div>
+
+</body>
+</html>
