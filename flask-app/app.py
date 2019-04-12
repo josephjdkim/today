@@ -56,7 +56,7 @@ def today():
     g_percent = str(round(100*(goods/(goods+bads)), 1))
     b_percent = str(round(100*(bads/(goods+bads)), 1))
 
-    return render_template("today.html", color=avg_color, good=g_percent, bad=b_percent)
+    return render_template("today.html", color=avg_color, good=g_percent, bad=b_percent, total=goods+bads)
 
 def calculateColor(g, b):
     good_color = [255, 226, 239]
